@@ -1,70 +1,20 @@
 <?php
 			include 'include/menu.php';
+			include 'include/random_img.php';
 		?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
 <title>Login</title>
-
-<style type="text/css">
-	* {
-		margin: 0;
-		padding: 0;
-		
-	}
 	
-	.login_box {
-	width: 220px;
-	padding: 10px;
-	border: 3px solid #FFF;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	margin: 100px auto 10px auto;
-	
-	}
-	
-	.login_title {
-		font-size: 12px;
-		font-weight: bold;
-	}
-	
-	.login_text {
-	font-size: 18px;
-	font-weight: bold;
-	color: #848484;
-	}
-	
-	.login_input {
-		width: 210px;
-		padding: 5px;
-		margin: 2px 0 2px 0;
-		border: 1px solid #39F; 
-		font-size: 16px;
-	
-	}
-	.login {
-	font: bold 12px Helvetica, Arial, sans-serif;
-	width: 100px;
-	height: 40px;
-	padding: 5px;
-	margin: 2px 0 2px 0;
-	border: 1px solid #FFF;
-	font-size: 15px;
-	background-color:#39F;
-	
-	}
-	
-	.error {
-		font-weight: bold;
-		color: #C30;
-	}
-	
-	</style>
+	<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/still.css">
 	</head>
 
-	<body bgcolor="#D6D6D6"><p align="center">&nbsp;</p>	
-
+	<body style=" background: url(img/<?php echo $selectedBg; ?>) no-repeat;"></p>	
+		
 		<form action="" method="post">
 		  <div class="login_box">
 		    <span class="login_title">Please Login</span><br />
@@ -79,6 +29,6 @@
 			<div align="right"><input name="login" type="submit" class="login" value="Login" /></div>
 		</div>
 	</form>
-
+	<?php include'include/footer.php';?>
 	</body>
 </html>

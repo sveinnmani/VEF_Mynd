@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="still.css">	
-</head>
-<body>
+  <style type="text/css">
+    .page-footer{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  
+  </style>
 		<footer class="page-footer">
           <div class="container">
             <div class="row">
@@ -23,10 +29,18 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2016 Copyright Sveinn Máni
-            
+            <p>&copy;
+              <?php
+                $startYear = 2016;
+                $thisYear = date('Y');
+                if ($startYear == $thisYear) {
+                 echo $startYear;
+                } else {
+                 echo "{$startYear}&ndash;{$thisYear}";
+                }
+              ?>
+              Sveinn Máni Jónsson
+            </p>            
             </div>
           </div>
         </footer>
-</body>
-</html>

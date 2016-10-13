@@ -15,18 +15,3 @@
   	$i = rand(0, count($bg)-1); // generate random number size of the array
   	$selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>	</title>
-</head>
-<body>
-<style type="text/css">
-<!--
-body{
-background: url(img/<?php echo $selectedBg; ?>) no-repeat;
-}
--->
-</style>
-</body>
-</html>
